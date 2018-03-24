@@ -5,6 +5,9 @@
 </head>
 
 <body>
+% if error:
+	<p style="color:red;">Duplicate username or password is shorter than 7 characters.</p>
+% end
 
 <form action='/insertuser' method='POST'>
 Username:<br>
